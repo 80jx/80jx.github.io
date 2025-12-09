@@ -1,0 +1,72 @@
+<html>
+<head>
+<!-- 自动刷新网页一次
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate">
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+结束自动刷新网页一次-->
+<title>80JX</title>
+<meta http-equiv="Content-Type" charset="UTF-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- 禁止鼠标右键-->
+<script type="text/javascript">
+document.body.oncontextmenu = document.body.ondragstart = 
+document.body.onselectstart = document.body.onbeforecopy = function(){
+    return false;
+};
+
+document.body.onselect = document.body.oncopy = document.body.onmouseup = function(){
+    // 现代浏览器的写法
+    if (window.getSelection) {
+        window.getSelection().removeAllRanges();
+    } else if (document.selection) {
+        document.selection.empty(); // 保留对旧版IE的支持
+    }
+};
+</script>
+<!-- 禁止鼠标右键结束-->
+<table width="280" height="181" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		 <td align="center"" WIDTH=280 HEIGHT=181>
+				<div align="center"><span style="color:blue;"><strong>
+                    还记得，青城山上，响水洞内；<br>江津瀑布，稻香弥漫。
+                    <br>还记得，兵临城下，攻城之战；<br>宋金杀戮，快意恩仇。
+                    </span><br><span style="color:red;">一人一马一孤舟，<br>一箫一剑一壶酒。<br>幸会！醉饮巴陵风满袖，<br>再会！笑问江湖几处秋。</span></div>
+ 	  	  <span id="sitetime"></span>
+     <script language=javascript>
+function siteTime(){
+window.setTimeout("siteTime()", 1000);
+var seconds = 1000
+var minutes = seconds * 60
+var hours = minutes * 60
+var days = hours * 24
+var years = days * 365
+var today = new Date()
+var todayYear = today.getFullYear()
+var todayMonth = today.getMonth()
+var todayDate = today.getDate()
+var todayHour = today.getHours()
+var todayMinute = today.getMinutes()
+var todaySecond = today.getSeconds()
+var t1 = Date.UTC(2025,11,12,12,00,00)
+var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
+var diff = t2-t1
+var diffYears = Math.floor(diff/years)
+var diffDays = Math.floor((diff/days)-diffYears*365)
+var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
+var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
+var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
+document.getElementById("sitetime").innerHTML="<strong><font size='-1'>已试剑："+diffDays+"天"+diffHours+"小时"+diffMinutes+"分"+diffSeconds+"秒</font></strong>"
+}
+siteTime()
+   </script>
+</strong>
+
+</td>
+
+	</tr>
+</table>
+</body>
+</html>
